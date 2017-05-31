@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>PalmtreeSoftware.$id$</id>
     <version>$version$</version>
     <title>$title$</title>
     <authors>$author$</authors>
@@ -13,7 +13,4 @@
     <copyright>$copyright$</copyright>
     <tags>PALMTREE</tags>
   </metadata>
-  <files>
-    <file src="bin\$configuration$\$id$.dll" target="lib\net46\" />
-  </files>
 </package>
