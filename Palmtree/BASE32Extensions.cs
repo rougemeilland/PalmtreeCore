@@ -14,18 +14,18 @@ using System.Diagnostics;
 namespace Palmtree
 {
     /// <summary>
-    /// ƒf[ƒ^‚Ì•ÏŠ·‚ğs‚¤Šg’£ƒƒ\ƒbƒh‚ÌƒNƒ‰ƒX‚Å‚·B
+    /// ãƒ‡ãƒ¼ã‚¿ã®å¤‰æ›ã‚’è¡Œã†æ‹¡å¼µãƒ¡ã‚½ãƒƒãƒ‰ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
     /// </summary>
     public static class BASE32Extensions
     {
-        #region ƒvƒ‰ƒCƒx[ƒgƒtƒB[ƒ‹ƒh
+        #region ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 
         private static char[] _digits;
         private static Dictionary<char, int> _keyed_digits;
 
         #endregion
 
-        #region ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+        #region ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 
         static BASE32Extensions()
         {
@@ -44,16 +44,16 @@ namespace Palmtree
 
         #endregion
 
-        #region ƒpƒuƒŠƒbƒNƒƒ\ƒbƒh
+        #region ãƒ‘ãƒ–ãƒªãƒƒã‚¯ãƒ¡ã‚½ãƒƒãƒ‰
 
         /// <summary>
-        /// ƒoƒCƒg”z—ñ‚ğBASE32Œ`®‚Ì•¶š—ñ‚É•ÏŠ·‚µ‚Ü‚·B
+        /// ãƒã‚¤ãƒˆé…åˆ—ã‚’BASE32å½¢å¼ã®æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
         /// </summary>
         /// <param name="data">
-        /// •ÏŠ·‚·‚éƒoƒCƒg”z—ñ‚Å‚·B
+        /// å¤‰æ›ã™ã‚‹ãƒã‚¤ãƒˆé…åˆ—ã§ã™ã€‚
         /// </param>
         /// <returns>
-        /// •ÏŠ·‚³‚ê‚½BASE32Œ`®‚Ì•¶š—ñ‚Å‚·B
+        /// å¤‰æ›ã•ã‚ŒãŸBASE32å½¢å¼ã®æ–‡å­—åˆ—ã§ã™ã€‚
         /// </returns>
         public static string ToBase32String(this byte[] data)
         {
@@ -65,13 +65,13 @@ namespace Palmtree
         }
 
         /// <summary>
-        /// BASE32Œ`®‚Ì•¶š—ñ‚ğƒoƒCƒg”z—ñ‚É•ÏŠ·‚µ‚Ü‚·B
+        /// BASE32å½¢å¼ã®æ–‡å­—åˆ—ã‚’ãƒã‚¤ãƒˆé…åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
         /// </summary>
         /// <param name="s">
-        /// •ÏŠ·‚·‚éBASE32Œ`®‚Ì•¶š—ñ‚Å‚·B
+        /// å¤‰æ›ã™ã‚‹BASE32å½¢å¼ã®æ–‡å­—åˆ—ã§ã™ã€‚
         /// </param>
         /// <returns>
-        /// •ÏŠ·‚³‚ê‚½ƒoƒCƒg”z—ñ‚Å‚·B
+        /// å¤‰æ›ã•ã‚ŒãŸãƒã‚¤ãƒˆé…åˆ—ã§ã™ã€‚
         /// </returns>
         public static byte[] FromBase32String(this string s)
         {
@@ -86,7 +86,7 @@ namespace Palmtree
 
         #endregion
 
-        #region ƒvƒ‰ƒCƒx[ƒgƒƒ\ƒbƒh
+        #region ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ¡ã‚½ãƒƒãƒ‰
 
         private static void ConvertWordToBase32(byte[] in_data, int in_index, char[] out_data, int out_index)
         {

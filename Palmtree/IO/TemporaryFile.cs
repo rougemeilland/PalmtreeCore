@@ -13,12 +13,12 @@ using System.IO;
 namespace Palmtree.IO
 {
     /// <summary>
-    /// ˆêˆÓ‚Ì–¼‘O‚ðŽ‚ÂˆêŽžƒtƒ@ƒCƒ‹–¼‚ðŠÇ—‚·‚éƒNƒ‰ƒX‚Å‚·B
+    /// ä¸€æ„ã®åå‰ã‚’æŒã¤ä¸€æ™‚ãƒ•ã‚¡ã‚¤ãƒ«åã‚’ç®¡ç†ã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
     /// </summary>
     public class TemporaryFile
         : IDisposable
     {
-        #region ƒvƒ‰ƒCƒx[ƒgƒtƒB[ƒ‹ƒh
+        #region ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 
         private static object _lockobj = new object();
         private bool _disposed;
@@ -27,10 +27,10 @@ namespace Palmtree.IO
 
         #endregion
 
-        #region ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+        #region ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 
         /// <summary>
-        /// ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Å‚·B
+        /// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§ã™ã€‚
         /// </summary>
         public TemporaryFile()
         {
@@ -39,21 +39,21 @@ namespace Palmtree.IO
         }
 
         /// <summary>
-        /// ƒfƒXƒgƒ‰ƒNƒ^‚Å‚·B
+        /// ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§ã™ã€‚
         /// </summary>
         ~TemporaryFile()
         {
-            // ˆÈ‰º‚Åc#‚ÌŠÇ—‰º‚É‚È‚¢Ž‘Œ¹‚ð‰ð•ú‚·‚é(Dispose‚ðŒÄ‚Ño‚·‚¾‚¯)
-            // ‘¼‚ÌC#ƒIƒuƒWƒFƒNƒg‚ªŠù‚Éæ‚É‰ð•ú‚³‚ê‚Ä‚¢‚é‰Â”\«‚ª‚ ‚é‚Ì‚ÅA‘¼‚ÌC#ƒIƒuƒWƒFƒNƒg‚ÉŠÖ˜A‚µ‚½‰ð•úˆ—‚Ís‚Á‚Ä‚Í‚È‚ç‚È‚¢
+            // ä»¥ä¸‹ã§c#ã®ç®¡ç†ä¸‹ã«ãªã„è³‡æºã‚’è§£æ”¾ã™ã‚‹(Disposeã‚’å‘¼ã³å‡ºã™ã ã‘)
+            // ä»–ã®C#ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒæ—¢ã«å…ˆã«è§£æ”¾ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚‹ã®ã§ã€ä»–ã®C#ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«é–¢é€£ã—ãŸè§£æ”¾å‡¦ç†ã¯è¡Œã£ã¦ã¯ãªã‚‰ãªã„
             Dispose(false);
         }
 
         #endregion
 
-        #region ƒpƒuƒŠƒbƒNƒvƒƒpƒeƒB
+        #region ãƒ‘ãƒ–ãƒªãƒƒã‚¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 
         /// <summary>
-        /// ˆêŽžƒtƒ@ƒCƒ‹‚ÌƒpƒX–¼‚ðŽæ“¾‚µ‚Ü‚·B
+        /// ä¸€æ™‚ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹åã‚’å–å¾—ã—ã¾ã™ã€‚
         /// </summary>
         public string FilePath
         {
@@ -67,10 +67,10 @@ namespace Palmtree.IO
 
         #endregion
 
-        #region IDisposable ‚Ìƒƒ“ƒo
+        #region IDisposable ã®ãƒ¡ãƒ³ãƒ
 
         /// <summary> 
-        /// Žg—p’†‚ÌƒŠƒ\[ƒX‚ð‚·‚×‚ÄƒNƒŠ[ƒ“ƒAƒbƒv‚µ‚Ü‚·B
+        /// ä½¿ç”¨ä¸­ã®ãƒªã‚½ãƒ¼ã‚¹ã‚’ã™ã¹ã¦ã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—ã—ã¾ã™ã€‚
         /// </summary>
         public virtual void Dispose()
         {
@@ -83,13 +83,13 @@ namespace Palmtree.IO
 
         #endregion
 
-        #region ƒvƒƒeƒNƒeƒbƒhƒƒ\ƒbƒh
+        #region ãƒ—ãƒ­ãƒ†ã‚¯ãƒ†ãƒƒãƒ‰ãƒ¡ã‚½ãƒƒãƒ‰
 
         /// <summary> 
-        /// Žg—p’†‚ÌƒŠƒ\[ƒX‚ð‚·‚×‚ÄƒNƒŠ[ƒ“ƒAƒbƒv‚µ‚Ü‚·B
+        /// ä½¿ç”¨ä¸­ã®ãƒªã‚½ãƒ¼ã‚¹ã‚’ã™ã¹ã¦ã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—ã—ã¾ã™ã€‚
         /// </summary>
         /// <param name="disposing">
-        /// ƒ}ƒl[ƒW ƒŠƒ\[ƒX‚ª”jŠü‚³‚ê‚éê‡ trueA”jŠü‚³‚ê‚È‚¢ê‡‚Í false ‚Å‚·B
+        /// ãƒžãƒãƒ¼ã‚¸ ãƒªã‚½ãƒ¼ã‚¹ãŒç ´æ£„ã•ã‚Œã‚‹å ´åˆ trueã€ç ´æ£„ã•ã‚Œãªã„å ´åˆã¯ false ã§ã™ã€‚
         /// </param>
         protected void Dispose(bool disposing)
         {
@@ -99,9 +99,9 @@ namespace Palmtree.IO
                 {
                     if (disposing)
                     {
-                        // C#‚ÌŠÇ—‰º‚É‚ ‚éŽ‘Œ¹‚ð‰ð•ú‚·‚é
+                        // C#ã®ç®¡ç†ä¸‹ã«ã‚ã‚‹è³‡æºã‚’è§£æ”¾ã™ã‚‹
                     }
-                    // ˆÈ‰º‚Åc#‚ÌŠÇ—‰º‚É‚È‚¢Ž‘Œ¹‚ð‰ð•ú‚·‚é
+                    // ä»¥ä¸‹ã§c#ã®ç®¡ç†ä¸‹ã«ãªã„è³‡æºã‚’è§£æ”¾ã™ã‚‹
                     try
                     {
                         File.Delete(_tempfile);

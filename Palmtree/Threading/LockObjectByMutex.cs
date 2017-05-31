@@ -12,24 +12,24 @@ using System.Threading;
 namespace Palmtree.Threading
 {
     /// <summary>
-    /// <see cref="Lock"/>ƒNƒ‰ƒX‚Æ‹¤‚Ég—p‚µA<see cref="Lock"/>ƒIƒuƒWƒFƒNƒg‚ÌDispose‚ÉMutex‚Ì”r‘¼‚Ì‰ğ•ú‚ğ•ÛØ‚·‚é‚½‚ß‚ÌƒNƒ‰ƒX‚Å‚·B
+    /// <see cref="Lock"/>ã‚¯ãƒ©ã‚¹ã¨å…±ã«ä½¿ç”¨ã—ã€<see cref="Lock"/>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®Disposeæ™‚ã«Mutexã®æ’ä»–ã®è§£æ”¾ã‚’ä¿è¨¼ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
     /// </summary>
     public class LockObjectByMutex
         : ILockable
     {
-        #region ƒvƒ‰ƒCƒx[ƒgƒtƒB[ƒ‹ƒh
+        #region ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 
         private Mutex _mutex;
 
         #endregion
 
-        #region ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+        #region ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 
         /// <summary>
-        /// ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Å‚·B
+        /// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§ã™ã€‚
         /// </summary>
         /// <param name="mutex">
-        /// ”r‘¼‚Ì‚½‚ß‚Ég—p‚·‚é<see cref="Mutex"/>ƒIƒuƒWƒFƒNƒg‚Å‚·B
+        /// æ’ä»–ã®ãŸã‚ã«ä½¿ç”¨ã™ã‚‹<see cref="Mutex"/>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
         /// </param>
         public LockObjectByMutex(Mutex mutex)
         {
@@ -38,7 +38,7 @@ namespace Palmtree.Threading
 
         #endregion
 
-        #region ILockable ƒƒ“ƒo
+        #region ILockable ãƒ¡ãƒ³ãƒ
 
         void ILockable.Lock()
         {

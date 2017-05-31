@@ -12,18 +12,18 @@ using System;
 namespace Palmtree.Threading
 {
     /// <summary>
-    /// Dispose‚³‚ê‚é‚Æ‚«‚ÉILockable.Unlock‚ğŒÄ‚Ño‚·A”Ä—pƒƒbƒNƒIƒuƒWƒFƒNƒg‚Å‚·B
+    /// Disposeã•ã‚Œã‚‹ã¨ãã«ILockable.Unlockã‚’å‘¼ã³å‡ºã™ã€æ±ç”¨ãƒ­ãƒƒã‚¯ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
     /// </summary>
     public sealed class Lock
         : IDisposable
     {
-        #region ƒvƒ‰ƒCƒx[ƒgƒtƒB[ƒ‹ƒh
+        #region ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 
         private ILockable _obj;
 
         #endregion
 
-        #region ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+        #region ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 
         private Lock(ILockable obj)
         {
@@ -33,16 +33,16 @@ namespace Palmtree.Threading
 
         #endregion
 
-        #region ƒpƒuƒŠƒbƒNƒƒ\ƒbƒh
+        #region ãƒ‘ãƒ–ãƒªãƒƒã‚¯ãƒ¡ã‚½ãƒƒãƒ‰
 
         /// <summary>
-        /// usingƒXƒe[ƒgƒƒ“ƒg‚Åg—p‚·‚é<see cref="IDisposable"/>ƒIƒuƒWƒFƒNƒg‚ğ¶¬‚µ‚Ü‚·B
+        /// usingã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã§ä½¿ç”¨ã™ã‚‹<see cref="IDisposable"/>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         /// </summary>
         /// <param name="obj">
-        /// Dispose‚³‚ê‚é‚Æ‚«‚ÉUnlock‚ğŒÄ‚Ño‚·<see cref="ILockable"/>ƒIƒuƒWƒFƒNƒg‚Å‚·B
+        /// Disposeã•ã‚Œã‚‹ã¨ãã«Unlockã‚’å‘¼ã³å‡ºã™<see cref="ILockable"/>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
         /// </param>
         /// <returns>
-        /// usingƒXƒe[ƒgƒƒ“ƒg‚Åg—p‚·‚é<see cref="IDisposable"/>ƒIƒuƒWƒFƒNƒg‚Å‚·B
+        /// usingã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã§ä½¿ç”¨ã™ã‚‹<see cref="IDisposable"/>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
         /// </returns>
         public static IDisposable Create(ILockable obj)
         {
@@ -51,7 +51,7 @@ namespace Palmtree.Threading
 
         #endregion
 
-        #region IDisposable ƒƒ“ƒo
+        #region IDisposable ãƒ¡ãƒ³ãƒ
 
         void IDisposable.Dispose()
         {
