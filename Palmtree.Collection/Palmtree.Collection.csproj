@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Palmtree.Collection</RootNamespace>
     <AssemblyName>Palmtree.Collection</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -45,10 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GroupedAndSortedDictionary.cs" />
-    <Compile Include="GroupedDictionary.cs" />
-    <Compile Include="GroupedList.cs" />
-    <Compile Include="IGroupedCollection.cs" />
     <Compile Include="IReadOnlyArrayByGeneralIndex.cs" />
     <Compile Include="IReadOnlyArray.cs" />
     <Compile Include="IReadOnlyIndexer.cs" />
@@ -57,8 +53,6 @@
     <Compile Include="ReadOnlyArrayByGeneralIndex.cs" />
     <Compile Include="ReadOnlyArray.cs" />
     <Compile Include="ReadOnlyDictionaryWrapper.cs" />
-    <Compile Include="ReadOnlyGroupedCollectionWrapper.cs" />
-    <Compile Include="RStack.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Palmtree\Palmtree.csproj">

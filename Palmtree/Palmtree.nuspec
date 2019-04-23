@@ -6,8 +6,8 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
-    <projectUrl>https://github.com/rougemeilland/palmtreecore</projectUrl>
+    <licenseUrl>https://github.com/rougemeilland/PalmtreeCore/blob/master/LICENCE.txt</licenseUrl>
+    <projectUrl>https://github.com/rougemeilland/PalmtreeCore</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <copyright>$copyright$</copyright>

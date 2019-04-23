@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Palmtree</RootNamespace>
     <AssemblyName>Palmtree</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
@@ -87,7 +87,6 @@
     <Compile Include="BASE32Extensions.cs" />
     <Compile Include="GenericExtensions.cs" />
     <Compile Include="IGenericComparer.cs" />
-    <Compile Include="Configuration\SettingsExtensions.cs" />
     <Compile Include="IO\FileExtensions.cs" />
     <Compile Include="IO\TemporaryFile.cs" />
     <Compile Include="SimpleJson.cs" />
