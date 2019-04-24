@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palmtree", "Palmtree\Palmtr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palmtree.Collection", "Palmtree.Collection\Palmtree.Collection.csproj", "{E1095391-977B-40AC-848F-B70D3B92E3ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palmtree.Test", "Palmtree.Test\Palmtree.Test.csproj", "{D7EB75C8-AB5D-4A45-B83A-39D3D437C4A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,15 @@ Global
 		{E1095391-977B-40AC-848F-B70D3B92E3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1095391-977B-40AC-848F-B70D3B92E3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1095391-977B-40AC-848F-B70D3B92E3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EB75C8-AB5D-4A45-B83A-39D3D437C4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EB75C8-AB5D-4A45-B83A-39D3D437C4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EB75C8-AB5D-4A45-B83A-39D3D437C4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EB75C8-AB5D-4A45-B83A-39D3D437C4A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28FEE1F8-C94D-4105-9F27-90B6EECCDD28}
 	EndGlobalSection
 EndGlobal

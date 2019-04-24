@@ -95,6 +95,7 @@
     <Compile Include="Threading\ILockable.cs" />
     <Compile Include="Threading\Lock.cs" />
     <Compile Include="Threading\LockObjectByMutex.cs" />
+    <Compile Include="Threading\WaitHandleExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="IWshRuntimeLibrary">
