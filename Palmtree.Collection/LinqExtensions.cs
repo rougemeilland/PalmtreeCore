@@ -2030,6 +2030,18 @@ namespace Palmtree.Collection
         #region パブリックメソッド
 
         /// <summary>
+        /// <see cref="IEnumerable{ELEMENT_T}"/>に型指定された入力を返します。
+        /// </summary>
+        /// <typeparam name="ELEMENT_T">sourceの要素の型です。</typeparam>
+        /// <param name="source"><see cref="IEnumerable{ELEMENT_T}"/>に型指定するシーケンスです。</param>
+        /// <param name="element_converter"><see cref="object"/>型からELEMENT_T型に変換する関数です。</param>
+        /// <returns></returns>
+        public static IEnumerable<ELEMENT_T> AsEnumerable<ELEMENT_T>(this IEnumerable source, Func<object, ELEMENT_T> element_converter)
+        {
+            return (new AsEnumerableEnumerable<ELEMENT_T>(source, element_converter));
+        }
+
+        /// <summary>
         /// 与えられたコレクションから与えられた数の要素を取り出す組み合わせを列挙します。
         /// </summary>
         /// <typeparam name="ELEMENT_T">

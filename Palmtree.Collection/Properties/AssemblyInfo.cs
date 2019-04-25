@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("コレクションを扱う共通ライブラリです。")]
 [assembly: AssemblyCompany("Palmtree Software")]
 [assembly: AssemblyProduct("Palmtree Class Library")]
-[assembly: AssemblyCopyright("Copyright(C) 2008-2016 Palmtree Software. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright(C) 2008-2019 Palmtree Software. All rights reserved.")]
 
 // ComVisible を false に設定すると、その型はこのアセンブリ内で COM コンポーネントから 
 // 参照不可能になります。COM からこのアセンブリ内の型にアクセスする場合は、
@@ -29,4 +29,4 @@ using System.Runtime.InteropServices;
 // すべての値を指定するか、下のように '*' を使ってビルドおよびリビジョン番号を 
 // 既定値にすることができます:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.2.*")]
+[assembly: AssemblyVersion("1.3.*")]
