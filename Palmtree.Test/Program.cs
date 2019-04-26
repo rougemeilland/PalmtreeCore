@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Threading;
 using Palmtree;
+using Palmtree.Data;
 using Palmtree.Collection;
 using Palmtree.Threading;
 
@@ -15,8 +17,11 @@ namespace Palmtree.Test
     {
         static void Main(string[] args)
         {
-            var pattern = new Regex(@"""(?<id>[a-zA-Z_][a-zA-Z0-9_]*?)""");
-            Console.WriteLine(string.Join(", ", pattern.Matches(@"""aa"" ""05"" ""0a"" ""a5""").AsEnumerable(item => (Match)item).Select(item => item.Value)));
+            using (var reader = new StreamReader(@"sample1.json"))
+            {
+                var o = SimpleJsonDeserializer.Deserialize(reader);
+                Console.WriteLine(SimpleJsonSerializer.Serialize(o));
+            }
             Console.ReadLine();
         }
     }

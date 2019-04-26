@@ -64,7 +64,10 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SerializationFormatParameter.cs" />
+    <Compile Include="Data\IJsonWriter.cs" />
+    <Compile Include="Data\IJsonReader.cs" />
+    <Compile Include="Data\JsonReaderBase.cs" />
+    <Compile Include="Data\JsonSerializationFormatParameter.cs" />
     <Compile Include="ComparableCompositeKey2.cs" />
     <Compile Include="ComparableCompositeKey3.cs" />
     <Compile Include="ComparableCompositeKey4.cs" />
@@ -74,6 +77,12 @@
     <Compile Include="CompositeKey7.cs" />
     <Compile Include="CompositeKey6.cs" />
     <Compile Include="CompositeKey5.cs" />
+    <Compile Include="Data\JsonStringWriter.cs" />
+    <Compile Include="Data\JsonTextStreamWriter.cs" />
+    <Compile Include="Data\SimpleJsonDeserializer.cs" />
+    <Compile Include="Data\SimpleJsonSerializer.cs" />
+    <Compile Include="Data\JsonTextStreamReader.cs" />
+    <Compile Include="Data\JsonStringReader.cs" />
     <Compile Include="DateTimeExtensions.cs" />
     <Compile Include="Descending.cs" />
     <Compile Include="Diagnostics\BenchmarkCounter.cs" />
@@ -89,7 +98,6 @@
     <Compile Include="IGenericComparer.cs" />
     <Compile Include="IO\FileExtensions.cs" />
     <Compile Include="IO\TemporaryFile.cs" />
-    <Compile Include="SimpleJson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringExtensions.cs" />
     <Compile Include="Threading\ILockable.cs" />

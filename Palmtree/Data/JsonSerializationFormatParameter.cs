@@ -1,25 +1,25 @@
 ﻿/*
-  SerializationFormatParameter.cs
+  JasonSerializationFormatParameter.cs
 
-  Copyright (c) 2017 Palmtree Software
+  Copyright (c) 2017-2019 Palmtree Software
 
   This software is released under the MIT License.
   https://opensource.org/licenses/MIT
 */
 
-namespace Palmtree
+namespace Palmtree.Data
 {
     /// <summary>
     /// オブジェクトのシリアライズの書式を指定するオブジェクトのクラスです。
     /// </summary>
-    public class SerializationFormatParameter
+    public class JsonSerializationFormatParameter
     {
         #region コンストラクタ
 
         /// <summary>
         ///  デフォルトコンストラクタです。
         /// </summary>
-        public SerializationFormatParameter()
+        public JsonSerializationFormatParameter()
         {
 
             DelimiterArrayLeft = "";
